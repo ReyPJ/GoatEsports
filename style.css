@@ -73,9 +73,10 @@ nav{
         position: fixed;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: -100%;
         width: 60vw;
         background: var(--goatred-color);
+        transition: all 1s;
     }
 
     .close-btn{
