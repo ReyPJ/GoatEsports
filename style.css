@@ -54,4 +54,11 @@ nav{
     background: #000;
     border-radius: 10px;
 }
+
+.side-nav,
+.toggler{
+    display: none;
+}
+
+
 /* Header Termina */
