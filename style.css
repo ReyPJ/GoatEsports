@@ -13,10 +13,6 @@ body{
 
 /* Header Inicia */
 
-img{
-    width: 38%;
-}
-
 a{
     text-decoration: none;
     color: #ffff;
@@ -38,6 +34,9 @@ nav{
     align-items: center;
     padding: 0 2rem;
 }
+.container img{
+    width: 300px;
+}
 
 .top-tit-list{
     display: flex;
@@ -47,5 +46,12 @@ nav{
 .nav-link{
     padding: 0.5rem 1rem;
     display: inline-block;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+.nav-link:hover{
+    background: #000;
+    border-radius: 10px;
 }
 /* Header Termina */
