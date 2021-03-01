@@ -1,0 +1,51 @@
+:root{
+    --goatred-color:#FC284A
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header Inicia */
+
+img{
+    width: 38%;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: var(--goatred-color);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.top-tit-list{
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.nav-link{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+/* Header Termina */
