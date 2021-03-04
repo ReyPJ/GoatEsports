@@ -1,3 +1,7 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/*Fuentes Finish */
+/* Variables Globales*/
 :root{
     --goatred-color:#FC284A
 }
@@ -16,7 +20,7 @@ body{
     padding: 0 80px;
     margin: auto;
 }
-
+/* Variables Globales*/
 /* Header Inicia */
 
 a{
@@ -46,7 +50,7 @@ nav{
 
 .top-tit-list{
     display: flex;
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
 }
 
 .nav-link{
@@ -154,8 +158,79 @@ nav{
 
 .home{
     display: flex;
-    background: linear-gradient(#000, #0003), url("img/Homeimg.jpg") no-repeat center;
+    background: linear-gradient(#000,rgba(0,0,0,0.8), #000), url("img/Homeimg.jpg") no-repeat center;
     height: 100vh;
-    background-size: cover;
+    background-size: contain ;
     background-attachment: fixed;
 }
+
+.home-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home .home-content .text{
+    color: #ffff;
+    font-size: 4.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home .home-content .text2{
+    color: #ffff;
+    font-size: 3.8rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home .home-content .text2 span{
+    color: var(--goatred-color);
+}
+/*Home media query inicia*/
+@media (max-width: 1050px){
+    .home{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 950px){
+    .home .home-content .text{
+        font-size: 3.5rem;
+    }
+    .home .home-content .text2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 560px){
+    .home .home-content .text{
+        font-size: 3rem;
+    }
+    .home .home-content .text2{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px){
+    .home .home-content .text{
+        font-size: 2.5rem;
+    }
+    .home .home-content .text{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 370px){
+    .home .home-content .text{
+        font-size: 2rem;
+    }
+    .home .home-content .text{
+        font-size: 1.5rem;
+    }
+}
+/*Home media query termina*/
