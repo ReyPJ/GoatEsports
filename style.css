@@ -11,6 +11,12 @@ body{
     width: 100%;
 }
 
+.max-width{
+    max-width: 1100px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 /* Header Inicia */
 
 a{
@@ -144,3 +150,12 @@ nav{
 }
 /* Header media query Termina*/
 /* Header Termina */
+/* Home inicia */
+
+.home{
+    display: flex;
+    background: linear-gradient(#000, #0003), url("img/Homeimg.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
