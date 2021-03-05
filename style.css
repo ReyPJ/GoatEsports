@@ -57,6 +57,7 @@ nav{
     padding: 0.5rem 1rem;
     display: inline-block;
     font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
     transition: all 0.4s;
 }
 
