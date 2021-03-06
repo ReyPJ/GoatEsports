@@ -9,10 +9,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 body{
     height: 100vh;
     width: 100%;
+}
+
+section{
+    padding: 100px 0;
 }
 
 .max-width{
@@ -235,3 +240,43 @@ nav{
     }
 }
 /*Home media query termina*/
+/*HOme Termina*/
+
+/*Teams Inicia*/
+
+.teams .title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+.teams .teams-content-main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams .teams-content-main .left{
+    width: 45%;
+}
+
+.teams .teams-content-main .left img{
+    height: 200px;
+    width: 450px;
+}
+
+.teams .teams-content-main .right{
+    width: 45%;
+}
+
+.teams .teams-content-main .right .text{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
