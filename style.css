@@ -240,7 +240,7 @@ nav{
     }
 }
 /*Home media query termina*/
-/*HOme Termina*/
+/*Home Termina*/
 
 /*Teams Inicia*/
 
@@ -266,12 +266,14 @@ nav{
 }
 
 .teams .teams-content-main .left img{
-    height: 200px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .teams .teams-content-main .right{
-    width: 45%;
+    width: 50%;
 }
 
 .teams .teams-content-main .right .text{
@@ -280,3 +282,105 @@ nav{
     font-weight: 200;
     margin-bottom: 10px;
 }
+
+.teams .teams-content-main .right .text span{
+    color: var(--goatred-color);
+}
+
+.teams .teams-content-main .right li{
+    text-align:justify;
+    list-style-image: url(img/lolicon.svg);
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.teams .teams-content-main .right li span{
+    color: var(--goatred-color);
+}
+
+.teams .teams-content-main .right .toplaner{
+    list-style-image: url(img/Top_icon.png)
+}
+
+.teams .teams-content-main .right .jungla{
+    list-style-image: url(img/Jungle.png);
+}
+
+.teams .teams-content-main .right .midlaner{
+    list-style-image: url(img/Middle_icon.png);
+}
+
+.teams .teams-content-main .right .Adc{
+    list-style-image: url(img/Bottom_icon.png);
+}
+
+.teams .teams-content-main .right .Support{
+    list-style-image: url(img/Support_icon.png);
+}
+
+/*PopUp LoL Team Inicia*/
+
+
+
+
+/*PopUp LoL Team Termina*/
+/* Team media query inicia */
+
+@media(max-width: 1104px){
+    .teams .teams-content-main .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width: 947px){
+    .teams .teams-content-main .column{
+        width: 100%;
+    }
+
+    .teams .teams-content-main .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .teams .teams-content-main .right{
+        flex: 100%;
+        text-align: center;
+    }
+
+    .teams .teams-content-main .right li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .teams .teams-content-main .right li{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+
+    .teams .teams-content-main .right .text{
+        font-size: 1.5rem;
+    }
+
+    .teams .teams-content-main .right li{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 380px){
+
+    .teams .teams-content-main .right .text{
+        font-size: 1.4rem;
+    }
+
+    .teams .teams-content-main .right li{
+        font-size: 0.8rem;
+    }
+}
+/* Team media query Termina */
+/*Teams termina*/
