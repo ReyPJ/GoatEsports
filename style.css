@@ -319,6 +319,24 @@ nav{
     list-style-image: url(img/Support_icon.png);
 }
 
+.teams .teams-content-main .right #lolpopupbuttom{
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #fff;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    padding: 7px;
+    color: #000;
+    transition: all 0.4s;
+}
+
+.teams .teams-content-main .right #lolpopupbuttom:hover{
+    background-color: var(--goatred-color);
+    color: #fff;
+    border: 1px solid var(--goatred-color);
+    border-radius: 10px;
+}
+
 /*PopUp LoL Team Inicia*/
 
 .popuplol .overlay{
