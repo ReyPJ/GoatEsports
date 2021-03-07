@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -45,17 +44,94 @@
     <section class="teams">
         <div class="max-width">
             <h2 class="title">Goat Esports Teams</h2>
+            <div class="games-list">
+            <ul>
+                <li class="lol-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
+                <li class="tft-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
+                <li class="valorant-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
+                <li class="fifa-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
+            </ul>
             <div class="teams-content-main">
                 <div class="colunm left">
                     <img src="img/Ornn.jpg">
                 </div>
                 <div class="colunm right">
                     <div class="text">League of legends <span>Team</span></div>
-                    <li class="toplaner">TOPLANERS: <span>GOAT Sun & GOAT Café Rey</span></li>
-                    <li class="jungla">JUNGLA: <span>GOAT Haung</span></li>
-                    <li class="midlaner">MIDLANERS: <span>GOAT Zmbx & GOAT Don Steven</span></li>
-                    <li class="Adc">ADC: <span>GOAT Neerui</span></li>
-                    <li class="Support">SUPPORT: <span>GOAT Melocotón</span></li>
+                    <ul>
+                        <li class="toplaner">TOPLANERS: <span>GOAT Sun & GOAT Café Rey</span></li>
+                        <li class="jungla">JUNGLA: <span>GOAT Haung</span></li>
+                        <li class="midlaner">MIDLANERS: <span>GOAT Zmbx & GOAT Don Steven</span></li>
+                        <li class="Adc">ADC: <span>GOAT Neerui</span></li>
+                        <li class="Support">SUPPORT: <span>GOAT Melocotón</span></li>
+                    </ul>
+                    <button id="lolpopupbuttom" onclick="tooglePopup1()">Conoce al equipo.</button>
+                </div>
+                <div class="popuplol" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <div class="popup-close-btn" onclick="tooglePopup1()">&times;</div>
+                        <img src="img/lolteam.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams-content-main">
+                <div class="colunm left">
+                    <img src="img/TFT.jpg">
+                </div>
+                <div class="colunm right">
+                    <div class="text">Team Fight Tactics <span>Player</span></div>
+                    <ul>
+                        <li class="toplaner">CAPITAN: <span>GOAT Lion</span></li>
+                    </ul>
+                    <button id="lolpopupbuttom" onclick="tooglePopup1()">Conoce al equipo.</button>
+                </div>
+                <div class="popuplol" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <div class="popup-close-btn" onclick="tooglePopup1()">&times;</div>
+                        <img src="img/lolteam.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams-content-main">
+                <div class="colunm left">
+                    <img src="img/valorant.png">
+                </div>
+                <div class="colunm right">
+                    <div class="text">Valorant <span>Team</span></div>
+                    <ul>
+                        <li class="toplaner">TOPLANERS: <span>GOAT Sun & GOAT Café Rey</span></li>
+                        <li class="jungla">JUNGLA: <span>GOAT Haung</span></li>
+                        <li class="midlaner">MIDLANERS: <span>GOAT Zmbx & GOAT Don Steven</span></li>
+                        <li class="Adc">ADC: <span>GOAT Neerui</span></li>
+                        <li class="Support">SUPPORT: <span>GOAT Melocotón</span></li>
+                    </ul>
+                    <button id="lolpopupbuttom" onclick="tooglePopup1()">Conoce al equipo.</button>
+                </div>
+                <div class="popuplol" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <div class="popup-close-btn" onclick="tooglePopup1()">&times;</div>
+                        <img src="img/lolteam.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams-content-main">
+                <div class="colunm left">
+                    <img src="img/fifa20.jpg">
+                </div>
+                <div class="colunm right">
+                    <div class="text">Fifa <span>Team</span></div>
+                    <ul>
+                        <li class="toplaner">TOPLANERS: <span>GOAT Sun & GOAT Café Rey</span></li>
+                        <li class="jungla">JUNGLA: <span>GOAT Haung</span></li>
+                        <li class="midlaner">MIDLANERS: <span>GOAT Zmbx & GOAT Don Steven</span></li>
+                        <li class="Adc">ADC: <span>GOAT Neerui</span></li>
+                        <li class="Support">SUPPORT: <span>GOAT Melocotón</span></li>
+                    </ul>
                     <button id="lolpopupbuttom" onclick="tooglePopup1()">Conoce al equipo.</button>
                 </div>
                 <div class="popuplol" id="popup-1">

@@ -261,6 +261,32 @@ nav{
     justify-content: space-between;
 }
 
+/* display list */
+
+.game-list{
+    display: flex;
+}
+
+.lol-display,
+.tft-display,
+.valorant-display,
+.fifa-display{
+    padding: 0.5rem 5rem;
+    display: inline-block;
+    margin-bottom: 4rem;
+    margin-left: 10px;
+    transition: all 0.85s ease;
+}
+
+.lol-display:hover,
+.tft-display:hover,
+.valorant-display:hover,
+.fifa-display:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--goatred-color);
+}
+
 .teams .teams-content-main .left{
     width: 45%;
 }
@@ -285,6 +311,10 @@ nav{
 
 .teams .teams-content-main .right .text span{
     color: var(--goatred-color);
+}
+
+.teams .teams-content-main .right ul{
+    margin-left: 28px;
 }
 
 .teams .teams-content-main .right li{
@@ -382,7 +412,7 @@ nav{
 }
 
 .popuplol.active .popup-content{
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease;
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -405,6 +435,10 @@ nav{
 @media(max-width: 947px){
     .teams .teams-content-main .column{
         width: 100%;
+    }
+
+    .teams .teams-content-main .right li{
+        list-style-image: none !important;
     }
 
     .teams .teams-content-main .left{

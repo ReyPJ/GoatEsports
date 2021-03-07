@@ -16,4 +16,4 @@ closeBtn.addEventListener('click', ()=>{
 
 function tooglePopup1(){
     lolpopup.classList.toggle('active');
-}
+};
