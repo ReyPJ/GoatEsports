@@ -14,20 +14,20 @@
             <a href="#" class="toggler"><i class="fas fa-bars"></i></a>
             <a href="#"><img src="img/textlogowhite.png" alt=""></a>
             <ul class="top-tit-list">
-                <li><a href="" class="nav-link">Inicio</a></li>
-                <li><a href="" class="nav-link">Nosotros</a></li>
-                <li><a href="" class="nav-link">Tienda</a></li>
-                <li><a href="" class="nav-link">Contacto</a></li>
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Nosotros</a></li>
+                <li><a href="#" class="nav-link">Tienda</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
             </ul>
         </div>
 
         <div class="side-nav">
             <a href="#" class="close-btn">&times;</a>
             <ul class="side-nav-list">
-                <li><a href="" class="side-nav-link">Inicio</a></li>
-                <li><a href="" class="side-nav-link">Nosotros</a></li>
-                <li><a href="" class="side-nav-link">Tienda</a></li>
-                <li><a href="" class="side-nav-link">Contacto</a></li>
+                <li><a href="#" class="side-nav-link">Inicio</a></li>
+                <li><a href="#" class="side-nav-link">Nosotros</a></li>
+                <li><a href="#" class="side-nav-link">Tienda</a></li>
+                <li><a href="#" class="side-nav-link">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -45,13 +45,11 @@
         <div class="max-width">
             <h2 class="title">Goat Esports Teams</h2>
             <div class="games-list">
-            <ul>
-                <li class="lol-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
-                <li class="tft-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
-                <li class="apex-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
-                <li class="fifa-display"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></li>
-            </ul>
-            <div class="teams-content-main">
+                <button class="lol-display" onclick="SetlolDisplay()"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></button>
+                <button class="tft-display" onclick="SetTftDisplay()"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></button>
+                <button class="apex-display" onclick="SetApexDisplay()"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></button>
+                <button class="fifa-display" onclick="SetFifaDisplay()"><img src="https://img.icons8.com/ios-glyphs/60/000000/league-of-legends.png"/></button>
+            <div class="teams-content-main" id="lol-disp">
                 <div class="colunm left">
                     <img src="img/Ornn.jpg">
                 </div>
@@ -75,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="teams-content-main-tft">
+            <div class="teams-content-main-tft" id="tft-disp">
                 <div class="colunm left">
                     <img src="img/TFT.jpg">
                 </div>
@@ -140,6 +138,7 @@
                 </div>
             </div>
         </div>
+        <script src="displays.js"></script>
     </section>
     <script src="script.js"></script>
 </body>

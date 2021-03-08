@@ -258,10 +258,11 @@ nav{
 .teams .teams-content-main-tft,
 .teams .teams-content-main-apex,
 .teams .teams-content-main-fifa{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 /* display list */
@@ -274,10 +275,12 @@ nav{
 .tft-display,
 .apex-display,
 .fifa-display{
+    border: #fff;
+    background-color: #fff;
     padding: 0.5rem 5rem;
     display: inline-block;
     margin-bottom: 4rem;
-    margin-left: 10px;
+    margin-left: 7px;
     transition: all 0.85s ease;
 }
 
