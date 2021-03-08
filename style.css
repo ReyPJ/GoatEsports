@@ -254,7 +254,18 @@ nav{
     font-family: 'Oswald', sans-serif;
 }
 
-.teams .teams-content-main,
+.teams .title span{
+    color: var(--goatred-color)
+}
+
+.teams .teams-content-main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
 .teams .teams-content-main-tft,
 .teams .teams-content-main-apex,
 .teams .teams-content-main-fifa{
@@ -271,10 +282,10 @@ nav{
     display: flex;
 }
 
-.lol-display,
-.tft-display,
-.apex-display,
-.fifa-display{
+#lol-display,
+#tft-display,
+#apex-display,
+#fifa-display{
     border: #fff;
     background-color: #fff;
     padding: 0.5rem 5rem;
@@ -284,14 +295,153 @@ nav{
     transition: all 0.85s ease;
 }
 
-.lol-display:hover,
-.tft-display:hover,
-.apex-display:hover,
-.fifa-display:hover{
+#lol-display:hover,
+#tft-display:hover,
+#apex-display:hover,
+#fifa-display:hover{
     cursor: pointer;
     border-radius: 10px;
     background-color: var(--goatred-color);
 }
+
+/* Display Media Query */
+
+@media(max-width: 1105px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        padding: 0.5rem 4rem;
+    } 
+}
+
+@media(max-width: 915px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        padding: 0.5rem 3.5rem;
+    } 
+}
+
+@media(max-width: 850px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        padding: 0.5rem 3.2rem;
+    } 
+}
+
+@media(max-width: 812px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        padding: 0.5rem 3rem;
+    } 
+}
+
+@media(max-width: 785px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 19rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 785px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 19rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 750px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 17rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 690px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 15rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 655px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 13rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 600px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 10rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 490px){
+
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 8rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 420px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 6rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+@media(max-width: 365px){
+    #lol-display,
+    #tft-display,
+    #apex-display,
+    #fifa-display{
+        display: inline-block;
+        padding: 0.5rem 4rem;
+        margin-bottom: 1rem;
+    } 
+}
+
 
 /* Display Termina */
 
@@ -572,6 +722,9 @@ nav{
 }
 
 @media (max-width: 480px){
+    .teams .title{
+        font-size: 2.5rem;
+    }
     .teams .teams-content-main .right li,
     .teams .teams-content-main-tft .right li,
     .teams .teams-content-main-apex .right li,
@@ -581,6 +734,10 @@ nav{
 }
 
 @media (max-width: 420px){
+
+    .teams .title{
+        font-size: 2.2rem;
+    }
 
     .teams .teams-content-main .right .text,
     .teams .teams-content-main-tft .right .text,
@@ -598,6 +755,10 @@ nav{
 }
 
 @media (max-width: 380px){
+
+    .teams .title{
+        font-size: 1.5rem;
+    }
 
     .teams .teams-content-main .right .text,
     .teams .teams-content-main-tft .right .text,
