@@ -2,9 +2,10 @@
 let sideNav = document.querySelector('.side-nav');
 let toggler = document.querySelector('.toggler');
 let closeBtn = document.querySelector('.close-btn');
-let lolpopup = document.getElementById('popup-1')
-let tftpopup = document.getElementById('popup-tft')
-let apexpopup = document.getElementById('popup-apex')
+let lolPopup = document.getElementById('popup-1')
+let tftPopup = document.getElementById('popup-tft')
+let apexPopup = document.getElementById('popup-apex')
+let fifaPopup = document.getElementById('popup-fifa')
 //Menu Scripts
 toggler.addEventListener('click', ()=>{
     sideNav.style.left = '0';
@@ -17,13 +18,17 @@ closeBtn.addEventListener('click', ()=>{
 //PopUp Scripts
 
 function tooglePopup1(){
-    lolpopup.classList.toggle('active');
+    lolPopup.classList.toggle('active');
 };
 
 function tooglePopup2(){
-    tftpopup.classList.toggle('active');
+    tftPopup.classList.toggle('active');
 };
 
 function tooglePopup3(){
-    apexpopup.classList.toggle('active');
+    apexPopup.classList.toggle('active');
+};
+
+function tooglePopup4(){
+    fifaPopup.classList.toggle('active');
 };

@@ -256,7 +256,8 @@ nav{
 
 .teams .teams-content-main,
 .teams .teams-content-main-tft,
-.teams .teams-content-main-apex{
+.teams .teams-content-main-apex,
+.teams .teams-content-main-fifa{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -289,15 +290,19 @@ nav{
     background-color: var(--goatred-color);
 }
 
+/* Display Termina */
+
 .teams .teams-content-main .left,
 .teams .teams-content-main-tft .left,
-.teams-content-main-apex .left{
+.teams-content-main-apex .left,
+.teams-content-main-fifa .left{
     width: 45%;
 }
 
 .teams .teams-content-main .left img,
 .teams .teams-content-main-tft .left img,
-.teams-content-main-apex .left img{
+.teams .teams-content-main-apex .left img,
+.teams .teams-content-main-fifa .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
@@ -306,13 +311,15 @@ nav{
 
 .teams .teams-content-main .right,
 .teams .teams-content-main-tft .right,
-.teams .teams-content-main-apex .right{
+.teams .teams-content-main-apex .right,
+.teams .teams-content-main-fifa .right{
     width: 50%;
 }
 
 .teams .teams-content-main .right .text,
 .teams .teams-content-main-tft .right .text,
-.teams .teams-content-main-apex .right .text{
+.teams .teams-content-main-apex .right .text,
+.teams .teams-content-main-fifa .right .text{
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 200;
@@ -321,13 +328,15 @@ nav{
 
 .teams .teams-content-main .right .text span,
 .teams .teams-content-main-tft .right .text span,
-.teams .teams-content-main-apex .right .text span{
+.teams .teams-content-main-apex .right .text span,
+.teams .teams-content-main-fifa .right .text span{
     color: var(--goatred-color);
 }
 
 .teams .teams-content-main .right ul,
 .teams .teams-content-main-tft .right ul,
-.teams .teams-content-main-apex .right ul{
+.teams .teams-content-main-apex .right ul,
+.teams .teams-content-main-fifa .right ul{
     margin-left: 28px;
 }
 
@@ -357,11 +366,20 @@ nav{
     padding: 5px;
 }
 
+.teams .teams-content-main-fifa .right li{
+    text-align:justify;
+    list-style-image: url("https://img.icons8.com/ios-glyphs/20/000000/goalkeeper.png");
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
 /* Tema icons de la lista TERMINA */
 
 .teams .teams-content-main .right li span,
 .teams .teams-content-main-tft .right li span,
-.teams .teams-content-main-apex .right li span{
+.teams .teams-content-main-apex .right li span,
+.teams .teams-content-main-fifa .right li span{
     color: var(--goatred-color);
 }
 
@@ -385,9 +403,26 @@ nav{
     list-style-image: url(img/Support_icon.png);
 }
 
+.teams .teams-content-main-fifa .right .Portero{
+    list-style-image: url("https://img.icons8.com/ios-glyphs/20/000000/goalkeeper.png"); 
+}
+
+.teams .teams-content-main-fifa .right .Defensa{
+    list-style-image: url("https://img.icons8.com/ios-glyphs/20/000000/tower.png");
+}
+
+.teams .teams-content-main-fifa .right .Mediocampo{
+    list-style-image: url("https://img.icons8.com/metro/20/000000/football.png");
+}
+
+.teams .teams-content-main-fifa .right .Delantero{
+    list-style-image: url("https://img.icons8.com/pastel-glyph/20/000000/football-goal.png");
+}
+
 .teams .teams-content-main .right #lolpopupbuttom,
 .teams .teams-content-main-tft .right #lolpopupbuttom-tft,
-.teams .teams-content-main-apex .right #apexpopupbuttom{
+.teams .teams-content-main-apex .right #apexpopupbuttom,
+.teams .teams-content-main-fifa .right #fifapopupbuttom{
     cursor: pointer;
     font-size: 1.2rem;
     background-color: #fff;
@@ -400,7 +435,8 @@ nav{
 
 .teams .teams-content-main .right #lolpopupbuttom:hover,
 .teams .teams-content-main-tft .right #lolpopupbuttom-tft:hover,
-.teams .teams-content-main-apex .right #apexpopupbuttom:hover{
+.teams .teams-content-main-apex .right #apexpopupbuttom:hover,
+.teams .teams-content-main-fifa .right #fifapopupbuttom:hover{
     background-color: var(--goatred-color);
     color: #fff;
     border: 1px solid var(--goatred-color);
@@ -411,7 +447,8 @@ nav{
 
 .popuplol .overlay,
 .popuptft .overlay,
-.popupapex .overlay{
+.popupapex .overlay,
+.popupfifa .overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -424,7 +461,8 @@ nav{
 
 .popuplol .popup-content,
 .popuptft .popup-content,
-.popupapex .popup-content{
+.popupapex .popup-content,
+.popupfifa .popup-content{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -438,7 +476,8 @@ nav{
 
 .popuplol .popup-close-btn,
 .popuptft .popup-close-btn,
-.popupapex .popup-close-btn{
+.popupapex .popup-close-btn,
+.popupfifa .popup-close-btn{
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -455,13 +494,15 @@ nav{
 
 .popuplol.active .overlay,
 .popuptft.active .overlay,
-.popupapex.active .overlay{
+.popupapex.active .overlay,
+.popupfifa.active .overlay{
     display: block;
 }
 
 .popuplol.active .popup-content,
 .popuptft.active .popup-content,
-.popupapex.active .popup-content{
+.popupapex.active .popup-content,
+.popupfifa.active .popup-content{
     transition: all 300ms ease;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -473,7 +514,8 @@ nav{
 @media(max-width: 1250px){
     #lolpopupbuttom,
     #lolpopupbuttom-tft,
-    #apexpopupbuttom{
+    #apexpopupbuttom,
+    #fifapopupbuttom{
         display: none;
     }
 }
@@ -484,7 +526,8 @@ nav{
 @media(max-width: 1104px){
     .teams .teams-content-main .left img,
     .teams .teams-content-main-tft .left img,
-    .teams .teams-content-main-apex .left img{
+    .teams .teams-content-main-apex .left img,
+    .teams .teams-content-main-fifa .left img{
         height: 350px;
         width: 350px;
     }
@@ -493,20 +536,23 @@ nav{
 @media(max-width: 947px){
     .teams .teams-content-main .column,
     .teams .teams-content-main-tft .column,
-    .teams .teams-content-main-apex .column{
+    .teams .teams-content-main-apex .column,
+    .teams .teams-content-main-fifa .column{
         width: 100%;
     }
 
     .teams .teams-content-main .right li,
     .teams .teams-content-main-tft .right li,
-    .teams .teams-content-main-apex .right li{
+    .teams .teams-content-main-apex .right li,
+    .teams .teams-content-main-fifa .right li{
         list-style-image: none !important;
         text-align: center;
     }
 
     .teams .teams-content-main .left,
     .teams .teams-content-main-tft .left,
-    .teams .teams-content-main-apex .left{
+    .teams .teams-content-main-apex .left,
+    .teams .teams-content-main-fifa .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
@@ -514,7 +560,8 @@ nav{
 
     .teams .teams-content-main .right,
     .teams .teams-content-main-tft .right,
-    .teams .teams-content-main-apex .right{
+    .teams .teams-content-main-apex .right,
+    .teams .teams-content-main-fifa .right{
         flex: 100%;
         text-align: center;
     }
@@ -524,7 +571,8 @@ nav{
 @media (max-width: 480px){
     .teams .teams-content-main .right li,
     .teams .teams-content-main-tft .right li,
-    .teams .teams-content-main-apex .right li{
+    .teams .teams-content-main-apex .right li,
+    .teams .teams-content-main-fifa .right li{
         font-size: 1rem;
     }
 }
@@ -533,13 +581,15 @@ nav{
 
     .teams .teams-content-main .right .text,
     .teams .teams-content-main-tft .right .text,
-    .teams .teams-content-main-apex .right .text{
+    .teams .teams-content-main-apex .right .text,
+    .teams .teams-content-main-fifa .right .text{
         font-size: 1.5rem;
     }
 
     .teams .teams-content-main .right li,
     .teams .teams-content-main-tft .right li,
-    .teams .teams-content-main-apex .right li{
+    .teams .teams-content-main-apex .right li,
+    .teams .teams-content-main-fifa .right li{
         font-size: 0.9rem;
     }
 }
@@ -548,13 +598,15 @@ nav{
 
     .teams .teams-content-main .right .text,
     .teams .teams-content-main-tft .right .text,
-    .teams .teams-content-main-apex .right .text{
+    .teams .teams-content-main-apex .right .text,
+    .teams .teams-content-main-fifa .right .text{
         font-size: 1.4rem;
     }
 
     .teams .teams-content-main .right li,
     .teams .teams-content-main-tft .right li,
-    .teams .teams-content-main-apex .right li{
+    .teams .teams-content-main-apex .right li,
+    .teams .teams-content-main-fifa .right li{
         font-size: 0.8rem;
     }
 }
