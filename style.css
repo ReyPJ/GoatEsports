@@ -775,20 +775,39 @@ nav{
 
 /* Product Grid comienza */
 
+.merch-title{
+    text-align: center;
+}
 
-.box-container a {
+.titlet{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titlet span{
     color: var(--goatred-color);
 }
-    
+
+.merch-title p{
+    font-size: 1.5rem;
+    color: #000;
+} 
+
 .box-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #ccc;
+    background: #fff;
+    padding: 100px;
 }
-    
+ 
 .box{
     flex: 1 1 300px;
     background: #fff;
@@ -800,28 +819,105 @@ nav{
     
 .box .image{
     padding: 10px;
-    background: #eee;
+    background: #fff;
     text-align: center;    
 }
     
 .box .image img{
-    height: 200px;
-    width: 250px;
+    height: 400px;
+    width: 260px;
     object-fit: cover;
     filter: drop-shadow(0 3px 5px rgba(0,0,0,.7))
 }
     
     
 .box .info{
-     padding: 10px;
-     color: #666;
-    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.box .info span{
+    color: var(--goatred-color)
 }
     
 .box .info .subInfo{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.box .info .subInfo .price{
+    display: flex;
+    color: var(--goatred-color);
+    font-size: 1.4rem;
+}
+
+.box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 423px;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    transform: scale(0);
 }
 
 
+.box:hover .overlay{
+    transform: scale(1);
+
+}
+
+.box .overlay a{
+    color: #666;;
+    background: #fff;
+    margin: 10px;
+    padding: 13px 15px;
+    font-size: 25px;
+    transform: translateY(-150px);
+    transition: all calc(.2s * var(--i)) ease;
+}
+
+
+.box .overlay a:hover{
+    color: var(--goatred-color);
+}
+
+.box:hover .overlay a{
+    transform: translateY(0px);
+}
+
+/*products media query */
+
+@media(max-width: 530px){
+    .box .image img{
+        height: 280px;
+        width: 220px;
+    }
+
+    .box .overlay{
+        height: 303px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 480px){
+    .box .image img{
+        height: 250px;
+        width: 200px;
+    }
+
+    .box .overlay{
+        height: 272px;
+        width: 100%;
+    }
+}
