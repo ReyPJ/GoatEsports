@@ -975,9 +975,7 @@ nav{
     .box .info{
         font-size: 0.9rem;
     }
-    .box .info .subInfo .price{
-        font-size: 0.9rem;
-    }
+
     .box .image img{
         height: 250px;
         width: 200px;
@@ -998,9 +996,7 @@ nav{
     .box .info{
         font-size: 0.7rem;
     }
-    .box .info .subInfo .price{
-        font-size: 0.7rem;
-    }
+
     .box .image img{
         height: 200px;
         width: 140px;
@@ -1016,9 +1012,7 @@ nav{
     .box .info{
         font-size: 1rem;
     }
-    .box .info .subInfo .price{
-        font-size: 1rem;
-    }
+
     .box .image img{
         height: 140px;
         width: 120px;
