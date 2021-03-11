@@ -972,6 +972,12 @@ nav{
 
 
 @media(max-width: 480px){
+    .box .info{
+        font-size: 0.9rem;
+    }
+    .box .info .subInfo .price{
+        font-size: 0.9rem;
+    }
     .box .image img{
         height: 250px;
         width: 200px;
@@ -989,6 +995,12 @@ nav{
 }
 
 @media(max-width: 420px){
+    .box .info{
+        font-size: 0.7rem;
+    }
+    .box .info .subInfo .price{
+        font-size: 0.7rem;
+    }
     .box .image img{
         height: 200px;
         width: 140px;
@@ -997,6 +1009,29 @@ nav{
     .box .overlay{
         height: 220px;
         width: 100%;
+    }
+}
+
+@media(max-width: 380px){
+    .box .info{
+        font-size: 1rem;
+    }
+    .box .info .subInfo .price{
+        font-size: 1rem;
+    }
+    .box .image img{
+        height: 140px;
+        width: 120px;
+    }
+
+    .box .overlay{
+        height: 180px;
+        width: 100%;
+    }
+
+    .box .overlay a{
+        margin: 1.3px;
+        padding: 5.5px 6px;
     }
 }
 
