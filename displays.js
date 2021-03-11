@@ -6,8 +6,7 @@ let fifaDisplay = document.querySelector('.teams-content-main-fifa')
 //Codigo//
 
 function SetlolDisplay(){
-    if (lolDisplay.style.display === 'none' || tftDisplay.style.display === 'flex' || 
-        apexDisplay.style.display === 'flex' || fifaDisplay.style.display === 'flex'){
+    if (lolDisplay.style.display === 'none'){
         lolDisplay.style.display = 'flex';
         tftDisplay.style.display = 'none';
         fifaDisplay.style.display = 'none';
@@ -18,8 +17,7 @@ function SetlolDisplay(){
 };
 
 function SetTftDisplay(){
-    if (tftDisplay.style.display === 'none' || lolDisplay.style.display === 'flex' || 
-        apexDisplay.style.display === 'flex' || fifaDisplay.style.display === 'flex'){
+    if (tftDisplay.style.display === 'none'){
         tftDisplay.style.display = 'flex';
         lolDisplay.style.display = 'none';
         fifaDisplay.style.display = 'none';
@@ -30,8 +28,7 @@ function SetTftDisplay(){
 };
 
 function SetApexDisplay(){
-    if (apexDisplay.style.display === 'none' || lolDisplay.style.display === 'flex' || 
-    tftDisplay.style.display === 'flex' || fifaDisplay.style.display === 'flex'){
+    if (apexDisplay.style.display === 'none'){
         apexDisplay.style.display = 'flex';
         lolDisplay.style.display = 'none';
         fifaDisplay.style.display = 'none';
@@ -42,8 +39,7 @@ function SetApexDisplay(){
 };
 
 function SetFifaDisplay(){
-    if (fifaDisplay.style.display === 'none' || lolDisplay.style.display === 'flex' || 
-    tftDisplay.style.display === 'flex' || apexDisplay.style.display === 'flex'){
+    if (fifaDisplay.style.display === 'none'){
         fifaDisplay.style.display = 'flex';
         lolDisplay.style.display = 'none';
         apexDisplay.style.display = 'none';
