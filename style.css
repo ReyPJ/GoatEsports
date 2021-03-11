@@ -670,8 +670,15 @@ nav{
     width: 100%;
 }
 
+.popuptft.active .popup-content  #lionimg{
+    width: 1200px;
+}
+
 @media(max-width: 1250px){
-    .popup-content img{
+
+
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
         width: 800px;
     }
 }
@@ -683,13 +690,16 @@ nav{
     .popupfifa .overlay{
         height: 100%;
     }
-    .popup-content img{
+
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
         width: 680px;
     }
 }
 
 @media(max-width: 740px){
-    .popup-content img{
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
         width: 500px;
     }
 }
@@ -703,12 +713,12 @@ nav{
         padding: 0px;
     }
 
-    .popup-content img{
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
         width: 390px;
     }
 
     .popuplol .popup-close-btn,
-    .popuptft .popup-close-btn,
     .popupapex .popup-close-btn,
     .popupfifa .popup-close-btn{
         font-size: 1.5rem;
