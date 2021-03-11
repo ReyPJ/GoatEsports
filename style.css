@@ -671,11 +671,48 @@ nav{
 }
 
 @media(max-width: 1250px){
-    #lolpopupbuttom,
-    #lolpopupbuttom-tft,
-    #apexpopupbuttom,
-    #fifapopupbuttom{
-        display: none;
+    .popup-content img{
+        width: 800px;
+    }
+}
+
+@media(max-width: 930px){
+    .popuplol .overlay,
+    .popuptft .overlay,
+    .popupapex .overlay,
+    .popupfifa .overlay{
+        height: 100%;
+    }
+    .popup-content img{
+        width: 680px;
+    }
+}
+
+@media(max-width: 740px){
+    .popup-content img{
+        width: 500px;
+    }
+}
+
+
+@media(max-width: 560px){
+    .popuplol .popup-content,
+    .popuptft .popup-content,
+    .popupapex .popup-content,
+    .popupfifa .popup-content{
+        padding: 0px;
+    }
+
+    .popup-content img{
+        width: 390px;
+    }
+
+    .popuplol .popup-close-btn,
+    .popuptft .popup-close-btn,
+    .popupapex .popup-close-btn,
+    .popupfifa .popup-close-btn{
+        font-size: 1.5rem;
+        background: var(--goatred-color);
     }
 }
 
