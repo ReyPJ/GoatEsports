@@ -715,7 +715,7 @@ nav{
 
     .popup-content img,
     .popuptft.active .popup-content  #lionimg{
-        width: 390px;
+        width: 350px;
     }
 
     .popuplol .popup-close-btn,
@@ -726,6 +726,33 @@ nav{
     }
 }
 
+@media(max-width: 400px){
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
+        width: 320px;
+    }
+}
+
+
+@media(max-width: 378px){
+    .popuplol .popup-content,
+    .popuptft .popup-content,
+    .popupapex .popup-content,
+    .popupfifa .popup-content{
+        left: 43%;
+    }
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
+        width: 320px;
+    }
+}
+
+@media(max-width: 360px){
+    .popup-content img,
+    .popuptft.active .popup-content  #lionimg{
+        width: 300px;
+    }
+}
 /*PopUp LoL Team Termina*/
 /* Team media query inicia */
 
