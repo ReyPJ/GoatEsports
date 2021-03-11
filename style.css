@@ -934,6 +934,23 @@ nav{
         height: 272px;
         width: 100%;
     }
+
+    .box .overlay a{
+        margin: 2px;
+        padding: 8px 10px;
+    }
+}
+
+@media(max-width: 420px){
+    .box .image img{
+        height: 200px;
+        width: 140px;
+    }
+
+    .box .overlay{
+        height: 220px;
+        width: 100%;
+    }
 }
 
 /*products media query */
