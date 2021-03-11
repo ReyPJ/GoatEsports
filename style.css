@@ -3,7 +3,8 @@
 /*Fuentes Finish */
 /* Variables Globales*/
 :root{
-    --goatred-color:#FC284A
+    --goatred-color:#FC284A;
+    --goatblue-color:#0D1E2A;
 }
 *{
     box-sizing: border-box;
@@ -239,6 +240,15 @@ nav{
 /*Home Termina*/
 
 /*Teams Inicia*/
+ 
+.teams{
+    background: linear-gradient(#fff,rgba(255,255,255,0.6), #fff), url(img/imagologoblack.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 200px;
+    backface-visibility: visible;
+}
+
 
 .teams .title{
     position: relative;
@@ -283,7 +293,7 @@ nav{
 #apex-display,
 #fifa-display{
     border: #fff;
-    background-color: #fff;
+    background-color: transparent;
     padding: 0.5rem 5rem;
     display: inline-block;
     margin-bottom: 4rem;
@@ -574,9 +584,9 @@ nav{
 .teams .teams-content-main-fifa .right #fifapopupbuttom{
     cursor: pointer;
     font-size: 1.2rem;
-    background-color: #fff;
+    background-color: transparent;
     margin-top: 30px;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     padding: 7px;
     color: #000;
     transition: all 0.4s;
@@ -640,6 +650,7 @@ nav{
     line-height: 30px;
     text-align: center;
 }
+
 
 .popuplol.active .overlay,
 .popuptft.active .overlay,
@@ -776,10 +787,13 @@ nav{
 /* Product Grid comienza */
 
 .merch-title{
+    padding-top: 100px;
+    background-color: var(--goatblue-color);
     text-align: center;
 }
 
 .titlet{
+    color: var(--goatred-color);
     position: relative;
     text-align: center;
     margin-bottom: 20px;
@@ -790,25 +804,26 @@ nav{
 }
 
 .titlet span{
-    color: var(--goatred-color);
+    color: #fff;
 }
 
 .merch-title p{
     font-size: 1.5rem;
-    color: #000;
+    color: #fff;
 } 
 
 .box-container {
+    background-color: var(--goatblue-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #fff;
     padding: 100px;
 }
  
 .box{
+    border-radius: 10px;
     flex: 1 1 300px;
     background: #fff;
     border: 1px solid rgba(0,0,0,0.3);
@@ -883,7 +898,7 @@ nav{
     padding: 13px 15px;
     font-size: 25px;
     transform: translateY(-150px);
-    transition: all calc(.2s * var(--i)) ease;
+    transition: all calc(.3s * var(--i)) ease;
 }
 
 
