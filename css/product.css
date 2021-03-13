@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+:root{
+    --goatred-color:#FC284A;
+    --goatblue-color:#0D1E2A;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: var(--goatred-color);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.container img{
+    width: 300px;
+}
+
+.top-tit-list{
+    display: flex;
+    padding: 0.8rem 0;
+}
+
+.nav-link{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.4s;
+}
+
+.nav-link:hover{
+    background: #000;
+    border-radius: 10px;
+}
+
+.side-nav{
+    z-index: 2;
+}
+
+.side-nav,
+.toggler{
+    display: none;
+}
+/* Header media query */
+@media (max-width: 700px){
+    .container img{
+        width: 230px;
+    }
+}
+
+@media (max-width: 630px){
+
+    .side-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 60vw;
+        background: var(--goatred-color);
+        transition: all 1s;
+    }
+
+    .close-btn{
+        font-size: 2rem;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 35px;
+        height: 35px;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.5s;
+    }
+
+    .close-btn:hover{
+        transform: rotate(180deg);
+    }
+
+    .side-nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .side-nav-list li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .side-nav-link{
+        display: inline-block;
+        width: 90%;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        transition: all 0.4s;
+    }
+
+    .side-nav-link:hover{
+        background: #000;
+    }
+
+    .top-tit-list{
+        display: none;
+    }
+
+    .container img{
+        padding: 0.5rem 0;
+    }
+
+    .toggler{
+        display: block;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    .container{
+        justify-content: flex-start;
+    }
+}
+
+
+
+/* aaaaaaaaaaaaa */
+
+.card-wrappper{
+    padding: 10rem 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+.img-display{
+    overflow: hidden;
+}
+
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img-showcase img{
+    min-width: 100%;
+}
+
+.img-select{
+    display: flex;
+}
+
+.img-item{
+    margin: 0.3rem;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+
+.img-item:hover{
+    opacity: 0.8;
+}
+
+.product-content{
+    padding: 2rem 1rem;
+}
+
+.productTtile{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: var(--goatblue-color);
+    margin: 1rem 0;
+}
+
+.productTtile span{
+    color: var(--goatred-color);
+}
+
+
+.productTtile::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: var(--goatblue-color);
+}
+
+.product-price{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: var(--goatblue-color);
+    padding-bottom: 0.6rem;
+}
+
+.product-detail p{
+    font-size: 1rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.cont-tallas{
+    display: flex;
+}
+
+.openpop{
+    color: var(--goatred-color);
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.openpop p{
+    z-index: 3;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #000;
+    color: rgb(163, 163, 163);
+    font-size: 0.8em;
+    margin-top: -29px;
+}
+
+.tag1cont{
+    display: none;
+}
+
+
+.openpop i{
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.openpop i:hover{
+    color: var(--goatblue-color);
+}
+
+
+
+.tallapopup .overlay{
+    position: fixed;
+    top: 0;
+    left:  0;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.tallapopup .popup-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+    background: var(--goatred-color);
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2;
+}
+
+.tallapopup .popup-close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--goatblue-color);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tallapopup.active .overlay{
+    display: block;
+}
+
+.tallapopup.active .popup-content{
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.tallasselect .titulo{
+    font-size: 1rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.tallas{
+    margin-top: 5px;
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.5rem;
+    outline: 0;
+    margin-right: 0.2rem;
+}
+
+.purchase-info{
+    margin: 1.5rem 0;
+}
+
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.purchase-info input{
+    width: 60px;
+}
+
+.purchase-info .btn{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+.purchase-info .btn:first-of-type{
+    background: var(--goatred-color);
+}
+
+
+.purchase-info .btn:hover{
+    background-color: var(--goatblue-color);
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-wrappper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .tallapopup .overlay{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tallapopup .popup-content{
+        padding: 0;
+    }
+
+    .tallapopup .popup-content img{
+        width: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    overflow: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 40px;
+    background: #000;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content img{
+    width: 300px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: var(--goatred-color);
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
