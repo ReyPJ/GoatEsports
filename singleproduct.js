@@ -19,3 +19,26 @@ function slideImage(){
 }
 
 window.addEventListener('resize', slideImage);
+
+
+
+// TAG
+
+const tag = document.getElementById('tags')
+
+function TagDisp(){
+    tag.style.display = 'block'
+};
+
+function TagDisp2(){
+    tag.style.display = 'none'
+};
+
+
+// PopUp
+
+const PopUp1  = document.getElementById('tallapopup');
+
+function tPopD(){
+    PopUp1.classList.toggle('active');
+};

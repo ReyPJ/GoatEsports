@@ -203,6 +203,10 @@ img{
     margin: 1rem 0;
 }
 
+.productTtile span{
+    color: var(--goatred-color);
+}
+
 
 .productTtile::after{
     content: '';
@@ -232,6 +236,91 @@ img{
     padding: 0.3rem;
     opacity: 0.8;
 }
+
+.cont-tallas{
+    display: flex;
+}
+
+.openpop{
+    color: var(--goatred-color);
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.openpop p{
+    z-index: 3;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #000;
+    color: rgb(163, 163, 163);
+    font-size: 0.8em;
+    margin-top: -29px;
+}
+
+.tag1cont{
+    display: none;
+}
+
+
+.openpop i{
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.openpop i:hover{
+    color: var(--goatblue-color);
+}
+
+
+
+.tallapopup .overlay{
+    position: fixed;
+    top: 0;
+    left:  0;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.tallapopup .popup-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+    background: var(--goatred-color);
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2;
+}
+
+.tallapopup .popup-close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--goatblue-color);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tallapopup.active .overlay{
+    display: block;
+}
+
+.tallapopup.active .popup-content{
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 
 .tallasselect .titulo{
     font-size: 1rem;
@@ -269,6 +358,7 @@ img{
 }
 
 .purchase-info .btn{
+    transition: all 0.3s ease;
     cursor: pointer;
     color: #fff;
 }
@@ -279,6 +369,7 @@ img{
 
 
 .purchase-info .btn:hover{
+    background-color: var(--goatblue-color);
     opacity: 0.9;
 }
 
@@ -302,6 +393,21 @@ img{
 
     .product-content{
         padding-top: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .tallapopup .overlay{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tallapopup .popup-content{
+        padding: 0;
+    }
+
+    .tallapopup .popup-content img{
+        width: 350px;
     }
 }
 
