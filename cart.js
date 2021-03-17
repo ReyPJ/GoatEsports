@@ -3,7 +3,7 @@ let carts = document.querySelectorAll('.pBtn');
 let products = [
     {
         name: 'Goat Jersey',
-        tag: 'GoatJersey',
+        tag: 'Jer1s',
         price: 14900,
         inCart: 0
     },
@@ -77,4 +77,46 @@ function totalCost(product){
 } 
 
 
+function displayCart(){
+    let cartItems = localStorage.getItem("productsInCart")
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+    let cartCost = localStorage.getItem('totalCost');
+    if(cartItems && productContainer){
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item =>{
+            productContainer.innerHTML += `
+            <div class="product">
+                <i class="fas fa-times-circle" id="remove"></i>
+                <img src="img/${item.tag}.png" width="30%">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">₡${item.price}</div>
+            <div class="quantity">
+                <i class="fas fa-arrow-circle-left" id="decrase"></i>
+                <span>${item.inCart}</span>
+                <i class="fas fa-arrow-circle-right" id="incrase"></i>
+            </div>
+            <div class="total">
+                ₡${item.inCart * item.price}
+            </div>
+            `;
+        });
+
+        productContainer.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotalTitle">
+                    Total en el carrito
+                </h4>
+                <h4 class="basketTotal">
+                    ₡${cartCost}
+                </h4>
+            </div>
+        `;
+    }
+
+}
+
+
 onLoadCartNumbers();
+displayCart();
