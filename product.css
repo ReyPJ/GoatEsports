@@ -347,7 +347,9 @@ img{
 }
 
 .purchase-info input,
-.purchase-info .pBtn{
+.purchase-info .pBtn,
+.purchase-info .hBtn,
+.purchase-info .jBtn{
     border: 1.5px solid #ddd;
     border-radius: 25px;
     text-align: center;
@@ -361,18 +363,24 @@ img{
     width: 60px;
 }
 
-.purchase-info .pBtn{
+.purchase-info .pBtn,
+.purchase-info .hBtn,
+.purchase-info .jBtn{
     transition: all 0.3s ease;
     cursor: pointer;
     color: #fff;
 }
 
-.purchase-info .pBtn:first-of-type{
+.purchase-info .pBtn:first-of-type,
+.purchase-info .hBtn:first-of-type,
+.purchase-info .jBtn:first-of-type{
     background: var(--goatred-color);
 }
 
 
-.purchase-info .pBtn:hover{
+.purchase-info .pBtn:hover,
+.purchase-info .hBtn:hover,
+.purchase-info .jBtn:hover{
     background-color: var(--goatblue-color);
     opacity: 0.9;
 }

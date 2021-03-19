@@ -1,5 +1,7 @@
 let carts = document.querySelectorAll('.pBtn');
-
+let carts1 = document.querySelectorAll('.hBtn');
+let carts2 = document.querySelectorAll('.jBtn');
+let decrase = document.getElementById('decrase');
 let products = [
     {
         name: 'Goat Jersey',
@@ -7,6 +9,18 @@ let products = [
         price: 14900,
         inCart: 0
     },
+    {
+        name: 'Goat Hoddie',
+        tag:'hoddie1',
+        price: 20000,
+        inCart: 0
+    },
+    {
+        name: 'Goat Jogger',
+        tag:'jogger1',
+        price: 18000,
+        inCart: 0
+    }
 
 ];
 
@@ -14,6 +28,20 @@ for (let i = 0; i < carts.length; i++){
     carts[i].addEventListener('click', ()=>{
         cartNumbers(products[i]);
         totalCost(products[i]);
+    });
+};
+
+for (let i = 0; i < carts1.length; i++){
+    carts1[i].addEventListener('click', ()=>{
+        cartNumbers(products[1]);
+        totalCost(products[1]);
+    });
+};
+
+for (let i = 0; i < carts2.length; i++){
+    carts2[i].addEventListener('click', ()=>{
+        cartNumbers(products[2]);
+        totalCost(products[2]);
     });
 };
 
@@ -87,15 +115,15 @@ function displayCart(){
         Object.values(cartItems).map(item =>{
             productContainer.innerHTML += `
             <div class="product">
-                <i class="fas fa-times-circle" id="remove"></i>
+                <i class="fas fa-times-circle"></i>
                 <img src="img/${item.tag}.png" width="30%">
                 <span>${item.name}</span>
             </div>
             <div class="price">₡${item.price}</div>
             <div class="quantity">
-                <i class="fas fa-arrow-circle-left" id="decrase"></i>
+                <i class="fas fa-arrow-circle-left"></i>
                 <span>${item.inCart}</span>
-                <i class="fas fa-arrow-circle-right" id="incrase"></i>
+                <i class="fas fa-arrow-circle-right"></i>
             </div>
             <div class="total">
                 ₡${item.inCart * item.price}
